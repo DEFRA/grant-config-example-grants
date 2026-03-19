@@ -6,4 +6,6 @@ if [ "$currentUser" != "github-actions[bot]" ]; then
       echo "❌ Please don't commit to main, make sure you are on a specific branch!"
       exit 1
     fi
+
+    compgen -G ".changeset/*-*-*.md" || (echo ❌ Make sure you have added a changeset file for this commit! && exit 1)
 fi
