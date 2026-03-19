@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.0.4
+
+### Patch Changes
+
+- 5bd1734: Update release name to make it a bit simpler
+
 ## 0.0.3
 
 ### Patch Changes
