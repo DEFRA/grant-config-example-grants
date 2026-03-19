@@ -1,0 +1,20 @@
+name: Check Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+
+jobs:
+  cdp-workflows:
+    name: Run Pull Request Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Ensure changeset file exists
+        run: compgen -G ".changeset/*-*-*.md"
