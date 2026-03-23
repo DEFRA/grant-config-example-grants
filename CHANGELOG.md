@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.0.6
+
+### Patch Changes
+
+- 28a0015: Remove the example added for demo
+
 ## 0.0.5
 
 ### Patch Changes
