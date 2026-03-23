@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.0.5
+
+### Patch Changes
+
+- 0333f99: Just an eample
+
 ## 0.0.4
 
 ### Patch Changes
