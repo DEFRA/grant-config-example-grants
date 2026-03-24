@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.0.7
+
+### Patch Changes
+
+- d81b727: Add new config for demo
+
 ## 0.0.6
 
 ### Patch Changes
