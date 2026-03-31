@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.0.8
+
+### Patch Changes
+
+- 164ee43: Update example configs. Remove dummy file added for demo
+
 ## 0.0.7
 
 ### Patch Changes
