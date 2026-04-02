@@ -16,9 +16,8 @@
   "scripts": {
     "prepare": "husky install",
     "github:release": "npx cdp-github-release grant-config-example-grants",
-    "publish:changed": "changeset publish",
     "version:changed": "changeset version",
-    "version:create": "changeset"
+    "version": "changeset"
   },
   "author": "Defra Future-Grants-Framework Team",
   "license": "OGL-UK-3.0",
