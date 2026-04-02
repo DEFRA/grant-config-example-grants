@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.0.9
+
+### Patch Changes
+
+- d2bb049: Enable protected workflow on repo
+
 ## 0.0.8
 
 ### Patch Changes
