@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   packages: write
+  pull-requests: write
 
 jobs:
   release:
@@ -32,14 +33,13 @@ jobs:
       - name: Version changed packages
         run: npm run version:changed
 
-      - name: Commit version bumps & push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Version package [skip ci]" || echo "No changes to commit"
-          git push
-      - name: Create Git tag & GitHub Release
-        run: npm run github:release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set user
+        run: git config user.name github-actions[bot] && git config user.email github-actions[bot]@users.noreply.github.com
+
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        with:
+          commitMode: 'github-api'
+          publish: npm run github:release
+          commit: 'Create new config version'
+          title: 'Create new config version'
