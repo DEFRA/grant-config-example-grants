@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.1.0
+
+### Minor Changes
+
+- 20a18e8: Add some gas config and rename pigs-might-fly
+
 ## 0.0.9
 
 ### Patch Changes
