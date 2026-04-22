@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.2.0
+
+### Minor Changes
+
+- 2e6d37c: Add validation config for example-grant-with-auth
+
 ## 0.1.0
 
 ### Minor Changes
