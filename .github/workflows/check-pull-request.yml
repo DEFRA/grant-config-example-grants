@@ -9,6 +9,10 @@ on:
       - reopened
       - synchronize
       - ready_for_review
+    paths-ignore:
+      - '.changeset/**'
+      - 'CHANGELOG.md'
+      - 'package.json'
 
 jobs:
   cdp-workflows:
