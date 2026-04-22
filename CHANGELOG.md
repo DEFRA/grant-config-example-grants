@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.2.1
+
+### Patch Changes
+
+- b897b88: Add hotfix release mechanism and instructions
+
 ## 0.2.0
 
 ### Minor Changes
