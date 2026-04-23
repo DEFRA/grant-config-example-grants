@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.2.2
+
+### Patch Changes
+
+- dab1d19: Add an estimated PMF submission schema
+
 ## 0.2.1
 
 ### Patch Changes
