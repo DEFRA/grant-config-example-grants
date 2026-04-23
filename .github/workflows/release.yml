@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - CHANGELOG.md
+      - 'example-grant-with-auth/**'
+      - 'pigs-might-fly/**'
 
 permissions:
   contents: write

@@ -7,5 +7,7 @@ if [ "$currentUser" != "github-actions[bot]" ]; then
       exit 1
     fi
 
-    compgen -G ".changeset/*-*-*.md" || (echo ❌ Make sure you have added a changeset file, run: npm run version && exit 1)
+    if git diff --name-only origin/HEAD...HEAD -- example-grant-with-auth pigs-might-fly | grep -q .; then
+        compgen -G ".changeset/*-*-*.md" || (echo ❌ Make sure you have added a changeset file, run: npm run version && exit 1)
+    fi
 fi

@@ -9,10 +9,9 @@ on:
       - reopened
       - synchronize
       - ready_for_review
-    paths-ignore:
-      - '.changeset/**'
-      - 'CHANGELOG.md'
-      - 'package.json'
+    paths:
+      - 'example-grant-with-auth/**'
+      - 'pigs-might-fly/**'
 
 jobs:
   cdp-workflows:
