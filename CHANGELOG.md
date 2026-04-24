@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.0
+
+### Minor Changes
+
+- d60682d: Add details page to example-grant-with-auth
+
 ## 0.2.2
 
 ### Patch Changes
