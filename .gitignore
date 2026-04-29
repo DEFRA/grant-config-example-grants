@@ -5,3 +5,4 @@ helm/**/*.lock
 .vscode
 .idea
 .DS_Store
+test/testconfig
