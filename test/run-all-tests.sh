@@ -10,6 +10,7 @@ TEST_COMMAND='npm run test:ci'
 export COMPOSE_EXPERIMENTAL_GIT_REMOTE=true
 export CI=true
 export COMPOSE_INTERACTIVE_NO_CLI=1
+export DOCKER_CLI_HINTS=false
 
 export ACCEPTANCE_TESTS_HOOK="
   docker compose -f https://github.com/DEFRA/grants-ui.git#main:compose.tests.yml run --quiet-pull --rm grants-ui-acceptance-tests $TEST_COMMAND &&
