@@ -9,7 +9,7 @@ TEST_COMMAND='npm run test:ci'
 
 export COMPOSE_EXPERIMENTAL_GIT_REMOTE=true
 export CI=true
-export COMPOSE_INTERACTIVE_NO_CLI=1
+export GIT_TERMINAL_PROMPT=0
 export DOCKER_CLI_HINTS=false
 
 export ACCEPTANCE_TESTS_HOOK="
