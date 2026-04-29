@@ -41,7 +41,7 @@ COMPOSE_COMMAND="docker compose \
 echo "Building docker compose containers..."
 eval "${COMPOSE_COMMAND} build --quiet  > /dev/null 2>&1"
 echo "Starting services with docker compose..."
-eval "${COMPOSE_COMMAND} up -d --quiet-pull --verbose"
+eval "${COMPOSE_COMMAND} up -d --quiet-pull"
 
 echo "Waiting for services to be healthy..."
 ATTEMPTS=0
