@@ -39,7 +39,7 @@ COMPOSE_COMMAND="docker compose \
   -f $(dirname "$0")/compose.localconfig.yml"
 
 echo "Building docker compose containers..."
-eval "${COMPOSE_COMMAND} build --quiet"
+eval "${COMPOSE_COMMAND} build --quiet  > /dev/null 2>&1"
 echo "Starting services with docker compose..."
 eval "${COMPOSE_COMMAND} up -d --quiet-pull"
 
