@@ -11,7 +11,7 @@ export COMPOSE_EXPERIMENTAL_GIT_REMOTE=true
 export CI=true
 
 export ACCEPTANCE_TESTS_HOOK="
-  docker compose -f https://github.com/DEFRA/grants-ui.git#main:compose.tests.yml run -T --quiet-pull --rm grants-ui-acceptance-tests $TEST_COMMAND &&
+  docker compose -f https://github.com/DEFRA/grants-ui.git#main:compose.tests.yml run --interactive=false -T --quiet-pull --rm grants-ui-acceptance-tests $TEST_COMMAND &&
   docker compose -f https://github.com/DEFRA/grants-ui.git#main:compose.tests.yml down
 "
 mkdir -p test/testconfig
