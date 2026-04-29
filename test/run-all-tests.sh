@@ -3,7 +3,7 @@ set -e
 
 # Usage:
 #   Run all acceptance tests:
-#     ./tools/run-all-tests.sh
+#     ./test/run-all-tests.sh
 
 TEST_COMMAND='npm run test:ci'
 
