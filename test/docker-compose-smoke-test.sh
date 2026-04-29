@@ -41,14 +41,7 @@ COMPOSE_COMMAND="docker compose \
 echo "Building docker compose containers..."
 eval "${COMPOSE_COMMAND} build --quiet  > /dev/null 2>&1"
 echo "Starting services with docker compose..."
-#eval "${COMPOSE_COMMAND} up -d --quiet-pull"
-docker compose \
-  -f https://github.com/DEFRA/grants-ui.git#main:compose.yml \
-  -f https://github.com/DEFRA/grants-ui.git#main:compose.ha.yml \
-  -f https://github.com/DEFRA/grants-ui.git#main:compose.land-grants.yml \
-  -f https://github.com/DEFRA/grants-ui.git#main:compose.ci.yml \
-  -f "$(dirname "$0")/compose.localconfig.yml" \
-  up -d --quiet-pull
+eval "${COMPOSE_COMMAND} up -d --quiet-pull"
 
 echo "Waiting for services to be healthy..."
 ATTEMPTS=0
