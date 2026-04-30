@@ -14,6 +14,10 @@ export ACCEPTANCE_TESTS_HOOK="
   docker compose -f https://github.com/DEFRA/grants-ui.git#main:compose.tests.yml down
 "
 
+if [ "${CI}" = "true" ]; then
+  export ACCEPTANCE_TESTS_HOOK="yes | ${ACCEPTANCE_TESTS_HOOK}"
+fi
+
 mkdir -p test/testconfig
 cp -r example-grant-with-auth/ test/testconfig/example-grant-with-auth@0.0.0
 cp $(dirname "$0")/release.yml test/testconfig/

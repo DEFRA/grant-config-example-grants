@@ -45,7 +45,7 @@ eval "${COMPOSE_COMMAND} build --quiet  > /dev/null 2>&1"
 echo "Starting services with docker compose..."
 START_SERVICES="${COMPOSE_COMMAND} up -d --quiet-pull"
 if [ "${CI}" = "true" ]; then
-  START_SERVICES="${START_SERVICES} -y"
+  START_SERVICES="yes | ${START_SERVICES}"
 fi
 eval "${START_SERVICES}"
 
