@@ -31,6 +31,8 @@ fi
 BASE='https://github.com/DEFRA/grants-ui.git#main:'
 BASE_COMPOSE=${BASE}compose.yml
 
+docker compose version
+
 COMPOSE_COMMAND="docker compose \
   -f ${BASE_COMPOSE} \
   -f ${BASE}compose.ha.yml \
@@ -41,7 +43,11 @@ COMPOSE_COMMAND="docker compose \
 echo "Building docker compose containers..."
 eval "${COMPOSE_COMMAND} build --quiet  > /dev/null 2>&1"
 echo "Starting services with docker compose..."
-eval "${COMPOSE_COMMAND} up -d --quiet-pull -y"
+START_SERVICES="${COMPOSE_COMMAND} up -d --quiet-pull"
+if [ "${CI}" = "true" ]; then
+  START_SERVICES="${START_SERVICES} -y"
+fi
+eval "${START_SERVICES}"
 
 echo "Waiting for services to be healthy..."
 ATTEMPTS=0
