@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.1
+
+### Patch Changes
+
+- 4c2e952: Minor change to example-grant-with-auth. plus run acceptance tests when config changes
+
 ## 0.3.0
 
 ### Minor Changes
