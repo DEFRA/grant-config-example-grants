@@ -21,3 +21,8 @@ jobs:
       - uses: actions/checkout@v6
       - name: Ensure changeset file exists
         run: compgen -G ".changeset/*-*-*.md"
+
+      - name: Run acceptance tests for grants-ui
+        run: |
+          chmod +x ./test/run-all-tests.sh
+          ./test/run-all-tests.sh
