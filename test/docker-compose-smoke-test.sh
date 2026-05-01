@@ -99,6 +99,6 @@ if [ -n "${ACCEPTANCE_TESTS_HOOK:-}" ]; then
   eval "${ACCEPTANCE_TESTS_HOOK}"
 fi
 
-eval "${COMPOSE_COMMAND} down"
+eval "${COMPOSE_COMMAND} down -v"
 echo ""
 echo "Tests complete."
