@@ -40,6 +40,9 @@ COMPOSE_COMMAND="docker compose \
   -f ${BASE}compose.ci.yml \
   -f $(dirname "$0")/compose.localconfig.yml"
 
+echo "Running pre-emptive volume cleanse..."
+docker volume prune -f
+
 echo "Building docker compose containers..."
 eval "${COMPOSE_COMMAND} build --quiet  > /dev/null 2>&1"
 echo "Starting services with docker compose..."
@@ -58,7 +61,7 @@ until docker compose -f ${BASE_COMPOSE} ps grants-ui | grep -q "Up"; do
     if [ ${ATTEMPTS} -eq ${MAX_ATTEMPTS} ]; then
         echo "Error: Timed out waiting for grants-ui service to start."
         docker compose -f ${BASE_COMPOSE} ps
-        eval "${COMPOSE_COMMAND} down"
+        eval "${COMPOSE_COMMAND} down -v"
         exit 1
     fi
     printf '.'
