@@ -5,6 +5,7 @@ metadata:
   enabledInProd: false
   referenceNumberPrefix: EGWA
   supportEmail: support@defra.gov.uk
+  tester: JustAValueToCheckMechanism
   cookieConsent:
     enabled: true
     serviceName: Farm and land service
