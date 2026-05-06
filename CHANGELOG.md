@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.3
+
+### Patch Changes
+
+- e2bca39: Fixing some auto format issues with yaml file
+
 ## 0.3.2
 
 ### Patch Changes
