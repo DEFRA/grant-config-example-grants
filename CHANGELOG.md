@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.2
+
+### Patch Changes
+
+- a5db410: Tolerate CPH errors when fetching business details
+
 ## 0.3.1
 
 ### Patch Changes
