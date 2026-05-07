@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.4
+
+### Patch Changes
+
+- ec77476: Update example-grant-with-auth yaml for TGC-1097
+
 ## 0.3.3
 
 ### Patch Changes
