@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.5
+
+### Patch Changes
+
+- 82c6f98: Update example-grant-with-auth submission schema
+
 ## 0.3.4
 
 ### Patch Changes
