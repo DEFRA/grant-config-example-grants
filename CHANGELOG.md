@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.6
+
+### Patch Changes
+
+- 68e6c95: Allow null for hiddenField in example-grant-with-auth submission schema (form declares `required: false` with no default), and sync gas.json with the PR #862 field set so the GAS-side schema matches the deployed form.
+
 ## 0.3.5
 
 ### Patch Changes
