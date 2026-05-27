@@ -13,6 +13,8 @@ metadata:
   submission:
     submissionSchemaPath: ./schemas/example-grant-with-auth-submission.schema.json
   grantRedirectRules: null
+  permissions:
+    enforce: false
   detailsPage:
     toleratedFailurePaths:
       - countyParishHoldings
