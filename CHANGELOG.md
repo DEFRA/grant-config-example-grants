@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.3.8
+
+### Patch Changes
+
+- 383a3fb: Add permissions.enforce = false
+
 ## 0.3.7
 
 ### Patch Changes
