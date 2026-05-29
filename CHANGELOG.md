@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.4.0
+
+### Minor Changes
+
+- 5c0eb11: Add configurable page-level permissions for grant applications, including amend, submit and view-only access rules
+
 ## 0.3.8
 
 ### Patch Changes
