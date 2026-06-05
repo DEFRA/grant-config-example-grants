@@ -1,5 +1,11 @@
 # grant-config-example-grants
 
+## 0.5.0
+
+### Minor Changes
+
+- ab59005: Move view permission to config
+
 ## 0.4.0
 
 ### Minor Changes
