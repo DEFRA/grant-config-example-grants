@@ -1,6 +1,6 @@
 {
   "name": "grant-config-example-grants",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Grant config for example grants",
   "engines": {
     "node": ">=24"
